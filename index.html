@@ -1,15 +1,17 @@
 <!DOCTYPE html> <!-- Importante colocar o tipo para fins de indexação. Nada garante que o arquivo contenha HTML mesmo que a extensão seja ".html". -->
-<html lang="pt-BR"> <!-- Essencial para a página principal. -->
+<html lang="pt-BR"> <!-- Essencial para a página principal. Para que o navegador saiba onde começa e termina o que ele deve renderizar (pode ser que o arquivo tenha conteúdo extra como "bagagem"). -->
     <!-- Todo o conteúdo HTML fica aqui dentro. -->
      <head>
         <!-- Aqui vêm informações para o servidor, assim como metadados. "Configurações invisíveis ao usuário". -->
          <meta charset="UTF-8"> <!-- Acentuação. -->
          <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Prepara o terreno para o desgin responsivo. -->
-         <title>Hello, world!</title> <!-- Nome que aparece na aba do navegador. -->
+         <title>O Mapa do Nosso Projeto</title> <!-- Nome que aparece na aba do navegador. -->
      </head>
      <body>
         <!-- Aqui vêm informações para o navegador, tudo o que é processado/renderizado localmente. "O que aparece na tela". -->
-         <header>
+         
+        <!-- Cabeçalho com Navegação -->
+        <header>
             <h1>AppFictício</h1>
             <nav>
                <ul> <!-- Unordered list. -->
@@ -19,6 +21,7 @@
             </nav>
          </header>
          
+         <!-- Apresentação / Hero -->
          <main>
             <section id="hero">
                <img src="img/helloworld_383x215.png" alt="Hello World" class="imagem-destaque">
@@ -47,12 +50,13 @@
             </section>
          </main>
 
+         <!-- Outras informações -->
          <section id="sobre">
             <h2>Sobre a Equipe</h2>
             <p>Criado por estudantes de usabilidade.</p>
          </section>
 
-         <footer>
+         <footer> <!-- Rodapé -->
             <p>&copy; 2026 AppFictício. Todos os direitos reservados.</p>
          </footer>
      </body>
