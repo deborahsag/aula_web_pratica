@@ -6,58 +6,60 @@
          <meta charset="UTF-8"> <!-- Acentuação. -->
          <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Prepara o terreno para o desgin responsivo. -->
          <title>O Mapa do Nosso Projeto</title> <!-- Nome que aparece na aba do navegador. -->
+         <link rel="stylesheet" href="css/style.css">
      </head>
      <body>
         <!-- Aqui vêm informações para o navegador, tudo o que é processado/renderizado localmente. "O que aparece na tela". -->
          
         <!-- Cabeçalho com Navegação -->
-        <header>
-            <h1>AppFictício</h1>
+        <header class="navegacao">
+            <h1 class="nome-site">AppFictício</h1>
             <nav>
-                  <a href="#inicio">Início</a>
-                  <a href="#sobre">Sobre</a>
-                  <a href="#features">Recursos</a>
-                  <a href="html/about.html">Desenvolvedores</a>
-                  <a href="html/saudacao.html">Saudação Personalizada</a>
+                  <a class="botao" href="#hero">Início</a>
+                  <a class="botao" href="#download">Download</a>
+                  <a class="botao" href="#features">Recursos</a>
+                  <a class="botao" href="#sobre">Sobre</a>
+                  <a class="botao" href="html/about.html">Desenvolvedores</a>
+                  <a class="botao" href="html/saudacao.html">Saudação Personalizada</a>
             </nav>
          </header>
          
          <!-- Apresentação / Hero -->
-         <main>
+         <main class="pagina pagina-principal">
             <section id="hero">
-               <img src="img/helloworld_383x215.png" alt="Hello World" class="imagem-destaque">
+               <img src="img/pexels-meruyert-gonullu-7317281.jpg" alt="Hello" class="imagem-destaque">
                
-               <h2>Transforme sua produtividade</h2>
+               <h1 id="download" class="titulo-heroi">Transforme sua produtividade</h1>
                
-               <p>O aplicativo definitivo para organizar sua vida, disponível agora.</p>
-
-               <a href="html/download.html"
-                  class="botao-primario">
-                  Baixar Agora
-               </a>
+               <p class="subtitulo">O aplicativo definitivo para organizar sua vida, disponível agora.</p>
+               
+               <p class="bloco-descricao">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+               <a href="html/download.html" class="botao botao-destaque">Baixar Agora</a>
+               <p class="bloco-descricao">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+               
 
             </section>
         
             <section id="features">
 
-               <h2>Por que escolher nosso app?</h2>
+               <h1 class="titulo">Por que escolher nosso app?</h1>
 
-               <ul> <!-- Unordered list. -->
-                  <li>Interface intuitiva</li>
-                  <li>Sincronização em nuvem</li>
-                  <li>Modo escuro nativo</li>
+               <ul class="habilidades"> <!-- Unordered list. -->
+                  <li class="habilidade">Interface intuitiva</li>
+                  <li class="habilidade">Sincronização em nuvem</li>
+                  <li class="habilidade">Modo escuro nativo</li>
                </ul>
 
             </section>
+         
+            <!-- Outras informações -->
+            <section id="sobre">
+               <h1 class="titulo">Sobre a Equipe</h1>
+               <p>Criado por estudantes de usabilidade.</p>
+            </section>
          </main>
-
-         <!-- Outras informações -->
-         <section id="sobre">
-            <h2>Sobre a Equipe</h2>
-            <p>Criado por estudantes de usabilidade.</p>
-         </section>
-
-         <footer> <!-- Rodapé -->
+         
+         <footer class="rodape"> <!-- Rodapé -->
             <p>&copy; 2026 AppFictício. Todos os direitos reservados.</p>
          </footer>
      </body>

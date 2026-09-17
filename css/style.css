@@ -18,6 +18,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
 body {
     font-family: "Segoe UI", Arial, Helvetica, sans-serif;
     background-color: var(--cor-fundo);
@@ -27,9 +32,29 @@ body {
 
 .pagina {
     min-height: 100vh;
+    margin: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.pagina-principal {
+    display: block;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.navegacao {
+    margin: 16px;
+    display: flex;
+    gap: 0.5rem;
+    position: sticky;
+    top: 16px;
+    z-index: 1000;
+}
+
+.nome-site {
+    color: var(--cor-secundaria);
 }
 
 h1 {
@@ -51,6 +76,47 @@ label {
 
 .link-texto:hover {
     color: var(--cor-primaria);
+}
+
+.imagem-destaque {
+    max-height: 500px;
+}
+
+#hero, #features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-heroi {
+    margin: 5px;
+    font-size: 3rem;
+    color: var(--cor-secundaria)
+}
+
+.titulo {
+    margin: 5px;
+    font-size: 2rem;
+    color: var(--cor-primaria)
+}
+
+.subtitulo {
+    margin-bottom: 24px;
+    color: var(--cor-texto-suave);
+}
+
+.bloco-descricao {
+    margin: 24px 400px 24px 400px;
+    text-align: justify;
+    color: var(--cor-texto);
+    font-size: larger;
+}
+
+.rodape {
+    margin-bottom: 16px;
+    text-align: center;
+    color: var(--cor-texto-suave);
 }
 
 .cartao, .cartao-saudacao {
@@ -112,11 +178,6 @@ label {
     border-radius: 10rem;
 }
 
-.subtitulo {
-    margin-bottom: 24px;
-    color: var(--cor-texto-suave);
-}
-
 .linha {
     display: flex;
     gap: 12px;
@@ -175,7 +236,7 @@ label {
 }
 
 @media (max-width: 400px) {
-    .cartao, .cartao-saudacao {
+    .pagina, .pagina-principal, .cartao, .cartao-saudacao {
         padding: 1.5rem;
         margin: 16px;
     }
