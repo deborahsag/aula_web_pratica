@@ -79,7 +79,9 @@ label {
 }
 
 .imagem-destaque {
+    height: auto;
     max-height: 500px;
+    max-width: 100%;
 }
 
 #hero, #features {
@@ -87,16 +89,17 @@ label {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .titulo-heroi {
-    margin: 5px;
+    margin: 10px 0;
     font-size: 3rem;
     color: var(--cor-secundaria)
 }
 
 .titulo {
-    margin: 5px;
+    margin: 10px 0;
     font-size: 2rem;
     color: var(--cor-primaria)
 }
@@ -239,5 +242,50 @@ label {
     .pagina, .pagina-principal, .cartao, .cartao-saudacao {
         padding: 1.5rem;
         margin: 16px;
+    }
+
+    .navegacao {
+        flex-direction: column;
+        align-items: center;
+        margin: 8px;
+        position: static;
+        top: auto;
+    }
+
+    .nome-site {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: var(--cor-fundo);
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .navegacao nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+        position: static;
+    }
+
+    .titulo-heroi {
+        font-size: 2rem;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .botao {
+        text-align: center;
+        width: 100%;
+        padding: 0.6rem 1rem;
+    }
+
+    .bloco-descricao {
+        margin: 8px;
+        font-size: 1rem;
     }
 }
